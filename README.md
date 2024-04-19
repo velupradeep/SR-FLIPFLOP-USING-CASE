@@ -1,5 +1,5 @@
 # NAME:PRADEEP V
-#REG NO:212223240119
+# REG NO:212223240119
 # SR-FLIPFLOP-USING-CASE
 
 **AIM:**
@@ -76,4 +76,5 @@ else begin
 
 
 **RESULTS**
+
 Thus, SR flipflop has been implemented using verilog and their functionality has been validated using their functional tables.
