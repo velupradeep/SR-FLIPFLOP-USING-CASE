@@ -45,7 +45,8 @@ Developed by:PRADEEP V
 RegisterNumber:212223240119
 */
 ```
-module SR_F(q, q_bar, s,r,clk, reset);
+
+module sr_ff(q, q_bar, s,r,clk, reset);
 input s,r,clk, reset;
 output reg q;
 output q_bar;
@@ -64,14 +65,15 @@ else begin
   end	
   assign q_bar = ~q;
   endmodule
-  
 ```
 
 **RTL LOGIC FOR FLIPFLOPS**
-![image](https://github.com/velupradeep/SR-FLIPFLOP-USING-CASE/assets/150329341/d358ece4-f5bc-45ae-9584-8b16ceb059ee)
+![324028136-d88744ee-1704-4475-88d3-eb7dd86422f9](https://github.com/velupradeep/SR-FLIPFLOP-USING-CASE/assets/150329341/77d1549a-c186-448c-9a99-d2f60daee3d9)
+
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+![324028063-a609bf64-b129-4328-b958-5d25bbbd74e9](https://github.com/velupradeep/SR-FLIPFLOP-USING-CASE/assets/150329341/4ca41645-f0e7-4fbf-9583-8399c3683d6d)
 
 
 **RESULTS**
