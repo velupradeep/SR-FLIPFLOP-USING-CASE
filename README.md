@@ -68,8 +68,8 @@ else begin
 ```
 
 **RTL LOGIC FOR FLIPFLOPS**
-![324028136-d88744ee-1704-4475-88d3-eb7dd86422f9](https://github.com/velupradeep/SR-FLIPFLOP-USING-CASE/assets/150329341/77d1549a-c186-448c-9a99-d2f60daee3d9)
 
+![324028136-d88744ee-1704-4475-88d3-eb7dd86422f9](https://github.com/velupradeep/SR-FLIPFLOP-USING-CASE/assets/150329341/4f9dd818-7af2-4af9-9106-0a38499dc6e9)
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
