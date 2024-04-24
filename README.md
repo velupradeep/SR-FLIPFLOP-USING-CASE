@@ -72,7 +72,6 @@ else begin
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-![image](https://github.com/velupradeep/SR-FLIPFLOP-USING-CASE/assets/150329341/cb302cf7-23cd-4bed-8ca1-7e210e24f36c)
 
 
 **RESULTS**
