@@ -45,35 +45,38 @@ Developed by:PRADEEP V
 RegisterNumber:212223240119
 */
 ```
-
-module sr_ff(q, q_bar, s,r,clk, reset);
-input s,r,clk, reset;
-output reg q;
-output q_bar;
-
-always@(posedge clk) begin
-if(!reset) q<=0;
-else begin
-  case ({s,r})
-    2'b00: q <= q;
-	 2'b01: q <= 1'b0;
-	 2'b10: q <= 1'b1;
-	 2'b11: q <= 1'bx;
-	 default: q <= q;
-	 endcase
-	end
-  end	
+module EXP_6(q, q_bar, s,r, clk, reset);//SR Flip Flop Behavioral Level using ‘case’ 
+  input s,r,clk, reset;
+  output reg q;
+  output q_bar;
+ 
+  always@(posedge clk) begin // for synchronous reset
+    if(!reset)       
+			q <= 0;
+    else 
+  begin
+      case({s,r})       
+	     2'b00: q <= q;    // No change
+        2'b01:q<=1'b0;   // Write logic for reset
+        2'b10:q<=1'b1;   // Write logic for set
+        2'b11:q<=1'bx;   // Write logic for Invalid state
+      endcase
+    end
+  end
   assign q_bar = ~q;
-  endmodule
+endmodule
+
 ```
 
 **RTL LOGIC FOR FLIPFLOPS**
+![323287627-2e7d6ca0-c02b-4c31-b3eb-f90bb1b7e0a5](https://github.com/velupradeep/SR-FLIPFLOP-USING-CASE/assets/150329341/da218219-12bf-413c-a037-b965bcb0fa00)
 
-![324028136-d88744ee-1704-4475-88d3-eb7dd86422f9](https://github.com/velupradeep/SR-FLIPFLOP-USING-CASE/assets/150329341/4f9dd818-7af2-4af9-9106-0a38499dc6e9)
+
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-![324028063-a609bf64-b129-4328-b958-5d25bbbd74e9](https://github.com/velupradeep/SR-FLIPFLOP-USING-CASE/assets/150329341/4ca41645-f0e7-4fbf-9583-8399c3683d6d)
+
+![323287725-78e77503-f09f-4696-8e28-41ec277e5350](https://github.com/velupradeep/SR-FLIPFLOP-USING-CASE/assets/150329341/8b3231ce-8fcb-4db9-8e38-c962e60b355d)
 
 
 **RESULTS**
