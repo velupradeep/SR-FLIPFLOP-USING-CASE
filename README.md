@@ -1,6 +1,5 @@
-# NAME:PRADEEP V
-# REG NO:212223240119
-# EX-06 SR-FLIPFLOP-USING-CASE
+
+# EX-06: Sr-Flipflop-Using-Case
 
 **AIM:**
 
